@@ -1,0 +1,25 @@
+// Omitted previous code for brevity (refer to previous response for core functionality)
+
+const registerButton = document.querySelector('#register-button');
+const registerModal = document.querySelector('#register-modal');
+const registerForm = document.querySelector('#register-form');
+const modalCloseButton = document.querySelector('.modal-close');
+
+// Registration Logic (placeholder, replace with actual user registration)
+registerButton.addEventListener('click', () => {
+  registerModal.classList.add('show'); // Display registration modal
+});
+
+modalCloseButton.addEventListener('click', () => {
+  registerModal.classList.remove('show'); // Hide registration modal
+});
+
+registerForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  const username = document.querySelector('#username').value;
+  const email = document.querySelector('#email').value;
+
+  // Implement user registration logic here (e.g., send data to server)
+  console.log(`Registering user: ${username}, ${email}`); 
+  

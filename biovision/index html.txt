@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioVision Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">BioVision</a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button id="login-button">Login</button>
+        <button id="register-button">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>BioVision Chat</h1>
+      <p>Connecting scientists and students worldwide to revolutionize biotechnology research.</p>
+      <img src="images/lab-biotech.jpg" alt="Lab Biotech Photo" class="background-image">
+      <div class="owner-profile">
+        <h2>Created by Dr. [Owner Name]</h2>
+        <p>[Owner Description]</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="main" id="chat-container">
+    <section class="chat-container">
+      <aside class="chat-list">
+        <h2>Chat List</h2>
+        <ul id="chat-list-items">
+          <li data-channel-id="1">Public - Biotechnology Channel</li>
+          </ul>
+      </aside>
+      <div class="chat-window">
+        <h2></h2>
+        <div class="chat-messages" id="chat-messages"></div>
+        <form class="chat-input" id="chat-form">
+          <input type="text" id="message-input" placeholder="Type your message..." />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <h2>Register</h2>
+      <form id="register-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Register</button>
+      </form>
+      <button type="button" class="modal-close">&times;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
